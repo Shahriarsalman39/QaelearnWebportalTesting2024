@@ -21,7 +21,7 @@ public class BasicXpathForQAELearn extends BaseTestForQAELearn{
 		driver.findElement(By.xpath("//div[@class='block align-right']/a[3]")).click();
 		driver.findElement(By.xpath("//input[@id='recipient-name']")).sendKeys("Salman");
 		driver.findElement(By.xpath("//input[starts-with(@id,'pas')]")).sendKeys("ahgvHo");
-		//driver.findElement(By.xpath("//*[text()='Login']")).click();
+		driver.findElement(By.xpath("//*[text()='Login']")).click();
 		
 		
 		
