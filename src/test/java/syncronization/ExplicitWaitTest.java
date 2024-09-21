@@ -15,7 +15,7 @@ public class ExplicitWaitTest extends BaseTestQaE{
 		openApplication();
 	}
 	
-	//@Test
+	@Test
 	public void logintest1() {
 		driver.findElement(By.xpath("//a[text()='Nazrul Koyel']")).click();
 		
@@ -24,8 +24,7 @@ public class ExplicitWaitTest extends BaseTestQaE{
 	
 	@Test
 	public void ValidLoginTest(){
-		openApplication();
-        exw= new ExplicitWait(driver);
+		exw= new ExplicitWait(driver);
 		exw.ClickLogin1();
 		exw.username1("Shahriarsalman39@gmail.com");
 		exw.password1("258@#*JK");
@@ -35,8 +34,7 @@ public class ExplicitWaitTest extends BaseTestQaE{
 	
 	@Test
 	public void InValidLoginTest(){
-		openApplication();
-        exw= new ExplicitWait(driver);
+		exw= new ExplicitWait(driver);
 		exw.ClickLogin1();
 		exw.username1("ahmenrf@gmail.com");
 		exw.password1("dfhief#");
